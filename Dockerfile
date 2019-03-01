@@ -6,7 +6,9 @@ COPY package*.json ./
 
 COPY . .
 
-ENV NODE_ENV production
+ENV \
+  NODE_ENV production \
+  SECRET thisIsMySecret
 
 EXPOSE 4000
 

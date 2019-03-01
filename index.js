@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'production') {
 
 http
 	.createServer((req, res) => {
-		res.write(`<h1>${message}</h1>`);
+		res.write(`<h1>${message} and ${ process.env.SECRET }</h1>`);
 		res.end();
 	})
 	.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
