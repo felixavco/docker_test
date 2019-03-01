@@ -1,0 +1,18 @@
+*Build an image 
+docker build -t (or --tag) <tagName> .
+
+*List all the images 
+docker images 
+or
+docker image ls -a
+
+*List all containers 
+docker ps -a 
+*List only runing containers
+docker ps
+
+*delete a container
+docker rm  <containerName or ID> (-f if container is running)
+
+*Access to a container 
+ docker exec -it <containerName or ID> bash
